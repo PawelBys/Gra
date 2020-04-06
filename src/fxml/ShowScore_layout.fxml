@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #C1C1C1;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pack.ShowScore_Controller">
+    <children>
+        <Button layoutX="100.0" onAction="#go_single" layoutY="140.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: #1F2339;" text="Single game" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Ayuthaya" size="18.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="112.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../asset/postacie/Zombie 2/PNG/Poses HD/character_zombie_walk1.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="-55.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../asset/postacie/Zombie 2/PNG/Poses HD/character_zombie_down.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="100.0" layoutY="200.0" mnemonicParsing="false" onAction="#multi" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: #1F2339;" text="Multi game" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Ayuthaya" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="100.0" layoutY="260.0" mnemonicParsing="false" onAction="#show_score" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: #1F2339;" text="Show score" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Ayuthaya" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="100.0" layoutY="320.0" mnemonicParsing="false" onAction="#show_hero" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: #1F2339;" text="Show hero" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Ayuthaya" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="100.0" layoutY="380.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: #1F2339;" text="Logout" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Ayuthaya" size="18.0" />
+            </font>
+        </Button>
+        <Label fx:id="hello_user" layoutX="312.0" layoutY="44.0" text="Login as">
+            <font>
+                <Font name="Ayuthaya" size="24.0" />
+            </font>
+        </Label>
+        <Pane layoutX="288.0" layoutY="117.0" prefHeight="426.0" prefWidth="536.0" style="-fx-background-color: #04081A#04081A; -fx-background-radius: 25;">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <children>
+                <Label fx:id="hello_user1" layoutX="189.0" layoutY="14.0" text="Top 10 players" textFill="WHITE">
+                    <font>
+                        <Font name="Ayuthaya" size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="table_score" layoutX="57.0" layoutY="93.0" prefHeight="287.0" prefWidth="448.0" text="1. root - 40" textFill="WHITE">
+                    <font>
+                        <Font name="Ayuthaya" size="13.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </children>
+</Pane>

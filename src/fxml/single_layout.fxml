@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #C1C1C1;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pack.single_Controller">
+    <children>
+        <Button layoutX="100.0" layoutY="140.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: #1F2339;" text="Single game" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Ayuthaya" size="18.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="112.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../asset/postacie/Zombie 2/PNG/Poses HD/character_zombie_walk1.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="-55.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../asset/postacie/Zombie 2/PNG/Poses HD/character_zombie_down.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="100.0" layoutY="200.0" mnemonicParsing="false" onAction="#multi" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: #1F2339;" text="Multi game" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Ayuthaya" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="100.0" layoutY="260.0" mnemonicParsing="false" onAction="#show_score" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: #1F2339;" text="Show score" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Ayuthaya" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="100.0" layoutY="320.0" mnemonicParsing="false" onAction="#show_hero" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: #1F2339;" text="Show hero" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Ayuthaya" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="100.0" onAction="#logout" layoutY="380.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: #1F2339;" text="Logout" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Ayuthaya" size="18.0" />
+            </font>
+        </Button>
+        <Label fx:id="hello_user" layoutX="312.0" layoutY="44.0" text="Login as">
+            <font>
+                <Font name="Ayuthaya" size="24.0" />
+            </font>
+        </Label>
+        <Pane layoutX="288.0" layoutY="117.0" prefHeight="426.0" prefWidth="536.0" style="-fx-background-color: #04081A#04081A; -fx-background-radius: 25;">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <children>
+                <Label fx:id="hello_user1" layoutX="189.0" layoutY="14.0" text="Select Hero" textFill="WHITE">
+                    <font>
+                        <Font name="Ayuthaya" size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="89.0" layoutY="219.0" text="BOB" textFill="WHITE">
+                    <font>
+                        <Font name="Ayuthaya" size="14.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="45.0" layoutY="219.0" onMouseClicked="#JennySelected" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../asset/postacie/Female adventurer 2/PNG/Poses HD/character_femaleAdventurer_behindBack.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="78.0" layoutY="376.0" prefHeight="21.0" prefWidth="47.0" text="JENNY" textFill="WHITE">
+                    <font>
+                        <Font name="Ayuthaya" size="14.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="212.0" layoutY="54.0" onMouseClicked="#AmySelected" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../asset/postacie/Female person 2/PNG/Poses HD/character_femalePerson_behindBack.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="255.0" layoutY="219.0" prefHeight="21.0" prefWidth="25.0" text="AMY" textFill="WHITE">
+                    <font>
+                        <Font name="Ayuthaya" size="14.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="211.0" layoutY="219.0" onMouseClicked="#JonnySelected" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../asset/postacie/Male adventurer 2/PNG/Poses HD/character_maleAdventurer_behindBack.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="247.0" layoutY="376.0" text="JONNY" textFill="WHITE">
+                    <font>
+                        <Font name="Ayuthaya" size="14.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="45.0" layoutY="54.0" onMouseClicked="#BobSelected" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../asset/postacie/Male person 2/PNG/Poses HD/character_malePerson_behindBack.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="381.0" layoutY="54.0" onMouseClicked="#ZuluSelected" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../asset/postacie/Zombie 2/PNG/Poses HD/character_zombie_behindBack.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="372.0" layoutY="219.0" onMouseClicked="#FredSelected" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../asset/postacie/Robot 2/PNG/Poses HD/character_robot_behindBack.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="407.0" layoutY="376.0" prefHeight="21.0" prefWidth="61.0" text="FRED-X" textFill="WHITE">
+                    <font>
+                        <Font name="Ayuthaya" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="424.0" layoutY="219.0" prefHeight="21.0" prefWidth="61.0" text="ZULU" textFill="WHITE">
+                    <font>
+                        <Font name="Ayuthaya" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </children>
+</Pane>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #C1C1C1;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pack.multi_3_Controller">
+    <children>
+
+        <Button layoutX="100.0" layoutY="140.0" mnemonicParsing="false" onAction="#single" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: #1F2339;" text="Single game" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Ayuthaya" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="100.0" layoutY="200.0" mnemonicParsing="false" onAction="#multi" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: #1F2339;" text="Multi game" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Ayuthaya" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="100.0" layoutY="260.0" mnemonicParsing="false" onAction="#show_score" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: #1F2339;" text="Show score" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Ayuthaya" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="100.0" layoutY="320.0" mnemonicParsing="false" onAction="#show_hero" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: #1F2339;" text="Show hero" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Ayuthaya" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="100.0" layoutY="380.0" mnemonicParsing="false" onAction="#logout" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: #1F2339;" text="Logout" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Ayuthaya" size="18.0" />
+            </font>
+        </Button>
+        <Label fx:id="hello_user" layoutX="312.0" layoutY="44.0" text="Login as">
+            <font>
+                <Font name="Ayuthaya" size="24.0" />
+            </font>
+        </Label>
+        <Pane layoutX="288.0" layoutY="117.0" prefHeight="426.0" prefWidth="536.0" style="-fx-background-color: #04081A#04081A; -fx-background-radius: 25;">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <children>
+               <!-- <ImageView  fitHeight="150.0" fitWidth="200.0" layoutX="45.0" layoutY="219.0"  pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../asset/postacie/Female adventurer 2/PNG/Poses HD/character_femaleAdventurer_behindBack.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="45.0" layoutY="219.0"  pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../asset/postacie/Female adventurer 2/PNG/Poses HD/character_femaleAdventurer_behindBack.png" />
+                    </image>
+                </ImageView>-->
+                <Label fx:id="player_1_hero" layoutX="112.0" layoutY="187.0" text="Player 1" textFill="WHITE">
+                    <font>
+                        <Font name="Ayuthaya" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="player_2_hero" layoutX="336.0" layoutY="187.0" text="Player 2" textFill="WHITE">
+                    <font>
+                        <Font name="Ayuthaya" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="258.0" layoutY="187.0" text="VS." textFill="WHITE">
+                    <font>
+                        <Font name="Ayuthaya" size="18.0" />
+                    </font>
+                </Label>
+                <Button layoutX="199.0" layoutY="266.0" mnemonicParsing="false" onAction="#lets_play_multi" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: #1F2339;" text="PLAY MULTI" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Ayuthaya" size="18.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="70.0" layoutY="-61.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../asset/postacie/Robot 2/PNG/Poses HD/character_robot_fallDown.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="119.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../asset/postacie/Male person 2/PNG/Poses HD/character_malePerson_show.png" />
+            </image>
+        </ImageView>
+    </children>
+</Pane>
