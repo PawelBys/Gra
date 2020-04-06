@@ -24,11 +24,6 @@
                 <Font name="Ayuthaya" size="18.0" />
             </font>
         </Button>
-        <Button layoutX="100.0" layoutY="320.0" mnemonicParsing="false" onAction="#show_hero" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: #1F2339;" text="Show hero" textAlignment="CENTER" textFill="WHITE">
-            <font>
-                <Font name="Ayuthaya" size="18.0" />
-            </font>
-        </Button>
         <Button layoutX="100.0" layoutY="380.0" mnemonicParsing="false" onAction="#logout" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: #1F2339;" text="Logout" textAlignment="CENTER" textFill="WHITE">
             <font>
                 <Font name="Ayuthaya" size="18.0" />
@@ -54,12 +49,12 @@
                         <Image url="@../asset/postacie/Female adventurer 2/PNG/Poses HD/character_femaleAdventurer_behindBack.png" />
                     </image>
                 </ImageView>-->
-                <Label fx:id="player_1_hero" layoutX="112.0" layoutY="187.0" text="Player 1" textFill="WHITE">
+                <Label fx:id="player_1_hero" layoutX="137.0" layoutY="187.0" text="Player 1" textFill="WHITE">
                     <font>
                         <Font name="Ayuthaya" size="18.0" />
                     </font>
                 </Label>
-                <Label fx:id="player_2_hero" layoutX="336.0" layoutY="187.0" text="Player 2" textFill="WHITE">
+                <Label fx:id="player_2_hero" layoutX="318.0" layoutY="187.0" text="Player 2" textFill="WHITE">
                     <font>
                         <Font name="Ayuthaya" size="18.0" />
                     </font>
