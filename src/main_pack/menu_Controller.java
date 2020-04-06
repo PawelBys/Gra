@@ -24,7 +24,7 @@ public class menu_Controller implements Initializable {
     }
 
     public void hello_user(String unsername){
-        hello_user.setText("Login as: "+unsername);
+        hello_user.setText("Logged as: "+unsername);
         USER = unsername;
     }
 

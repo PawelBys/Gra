@@ -19,7 +19,7 @@ public class ShowScore_Controller {
     public String TOP_10;
 
     public void hello_user(String unsername){
-        hello_user.setText("Login as: "+unsername);
+        hello_user.setText("Logged as: "+unsername);
         USER = unsername;
     }
 

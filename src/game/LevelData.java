@@ -47,7 +47,7 @@ public class LevelData {
     Image Tile_e = new Image("file:src/asset/Maps/Zestaw_1/Tiles/e.png");
     Image Tile_z = new Image("file:src/asset/rozne/door.png");
     Image Tile_y = new Image("file:src/asset/rozne/chest.png");
-    Image Tile_x = new Image("file:src/asset/rozne/000_0041_coin5.png");
+    Image Tile_x = new Image("file:src/asset/rozne/coin.png");
     Image Tile_m = new Image("file:src/asset/Golem_02_Jump Start_000.png");
 
     Image Tile_2_1 = new Image("file:src/asset/Maps/Zestaw_3/Tiles_rock/1.png");
@@ -83,7 +83,7 @@ public class LevelData {
             "00000000000000x0000000000000000000",
             "000m000000000abc0000x0000130000000",
             "0001222300000000000123000460m0000u",
-            "12285556991223999128569978de222222"
+            "12785556991223999178569978de222222"
     };
     public static final String[] LEVEL2 = new String[]{
             "0000000000000000000000000000000000",
@@ -288,7 +288,7 @@ public class LevelData {
                         break;
 
                     case 'y':
-                        Node platformy = createEntity2(j * 60, i * 70, 40, 40, Tile_y);
+                        Node platformy = createEntity2(j * 60, i * 60, 60, 60, Tile_y);
                         coins.add(platformy);
                         break;
                     case 'x':
@@ -343,7 +343,7 @@ public class LevelData {
                         break;
 
                     case 'y':
-                        Node platformy = createEntity2(j * 60, i * 70, 40, 40, Tile_y);
+                        Node platformy = createEntity2(j * 60, i * 60, 60, 60, Tile_y);
                         coins.add(platformy);
                         break;
                     case 'x':

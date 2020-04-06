@@ -46,7 +46,7 @@ public class register_Controller implements Initializable {
             window.show();
 
         }else{
-            System.out.println("Hasla sie nie zgadzaja");
+            System.out.println("Hasła się nie zgadzają");
         }
     }
 }
